@@ -3,7 +3,7 @@ name: Node.js MySQL CI/CD (All Jobs)
 on:
   push:
     branches:
-      - main
+      - master
 
 # =========================
 # JOB 1: BUILD
