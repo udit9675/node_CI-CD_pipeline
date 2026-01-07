@@ -5,10 +5,7 @@ on:
     branches:
       - master
       - development
-
-# =========================
 # JOB 1: BUILD
-# =========================
 jobs:
   build:
     name: Build Application
@@ -28,10 +25,7 @@ jobs:
 
       - name: Build project
         run: npm run build || echo "No build step"
-
-# =========================
 # JOB 2: TEST
-# =========================
   test:
     name: Run Tests
     runs-on: ubuntu-latest
@@ -51,10 +45,7 @@ jobs:
 
       - name: Run tests
         run: npm test || echo "No tests found"
-
-# =========================
 # JOB 3: DEPLOY (ONLY MASTER)
-# =========================
   deploy:
     name: Deploy to VPS
     runs-on: ubuntu-latest
