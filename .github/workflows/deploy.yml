@@ -52,7 +52,7 @@ jobs:
     needs: test
 
     # 🔴 IMPORTANT: deploy only master branch
-    if: github.ref == 'refs/heads/master'
+    # if: github.ref == 'refs/heads/master'
 
     steps:
       - name: Deploy using SSH
